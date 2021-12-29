@@ -1,0 +1,21 @@
+{# layout.html.twig #}
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %} Zoe Page {% endblock %}</title>
+{% block style %}<link href="style.css" rel="stylesheet">{% endblock %}
+        <link rel="icon" href="style.css">
+</head>
+
+<body>
+{% block navbar %}
+    {% include '_navbar.html.twig' %}
+{% endblock %}
+{% block content %} {% endblock %}
+<h3> Hello {{ name }}</h3>
+</body>
+</html>
